@@ -22,6 +22,7 @@
   "main": "index.js",
   "repository": "git@github.com:tyankatsu0105/stylelint-config-ecss.git",
   "scripts": {
+    "test": "echo 'skip test'",
     "fixpack": "fixpack",
     "precommit": "fixpack",
     "commit": "git-cz",
