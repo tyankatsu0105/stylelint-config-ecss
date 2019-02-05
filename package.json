@@ -36,6 +36,9 @@
   "config": {
     "changelog": "https://github.com/tyankatsu0105/stylelint-config-ecss"
   },
+  "dependencies": {
+    "stylelint-declaration-strict-value": "^1.1.2"
+  },
   "devDependencies": {
     "commitizen": "^3.0.5",
     "cz-conventional-changelog": "^2.1.0",
