@@ -14,6 +14,13 @@ module.exports = {
           "z-index": 0
         }
       }
+    ],
+    // ECSS selectors
+    "selector-class-pattern": [
+      "[a-z][a-zA-Z0-9]+-?([A-Z][a-zA-Z0-9]+)?_?([A-Z][a-zA-Z0-9]+)?",
+      {
+        message: "ECSS selectors is 'nsp-Component_ChildNode'"
+      }
     ]
   }
 };
