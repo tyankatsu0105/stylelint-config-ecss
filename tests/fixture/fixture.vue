@@ -66,4 +66,8 @@ a {
   display: block;
 }
 
+.Hoge-component{
+  display: block;
+}
+
 </style>
