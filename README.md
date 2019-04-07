@@ -4,6 +4,8 @@
 
 A stylelint config based on [ECSS](http://ecss.io/)
 
+# http://ecss.io/chapter9.html#stylelint
+
 # ECSS naming convention
 
 ```json

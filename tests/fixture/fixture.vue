@@ -47,7 +47,7 @@ a {
 .nsp-Component_ChildNode{
   display: block;
 }
-.hoge2-Component_ChildNode{
+.hohkkkkkkkkkk-Component_ChildNode{
   display: block;
 }
 .hoge2-Component2_ChildNode{
@@ -66,8 +66,33 @@ a {
   display: block;
 }
 
-.Hoge-component{
+.hoge-Compoent_co{
   display: block;
+}
+
+
+.hoge-Com{}
+
+.hoge{
+  display: block;
+
+  &-Huga{
+    display: block;
+
+    .foo{
+      display: block;
+
+      &bar{
+        display: block;
+      }
+    }
+  }
+}
+
+.hoge {
+  &-Hoge{
+    
+  }
 }
 
 </style>
