@@ -46,7 +46,7 @@ module.exports = {
     ],
     // ECSS selectors
     "selector-class-pattern": [
-      "^[a-z][a-zA-Z0-9]*(-[A-Z][a-zA-Z0-9]*(_[A-Z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*)?)?)?$",
+      "^[a-z][a-z0-9]*(-[A-Z][a-zA-Z0-9]*(_[A-Z][a-zA-Z0-9]*(-[a-z][a-z0-9]*)?)?)?$",
       {
         resolveNestedSelectors: true,
         message: "ECSS selectors is 'nsp-Component_ChildNode-variant'"
