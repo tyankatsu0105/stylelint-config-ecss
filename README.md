@@ -6,23 +6,12 @@ A stylelint config based on [ECSS](http://ecss.io/)
 
 # http://ecss.io/chapter9.html#stylelint
 
-# ECSS naming convention
-
-```json
-"selector-class-pattern": [
-  "^[a-z][a-zA-Z0-9]*(-[A-Z][a-zA-Z0-9]*(_[A-Z][a-zA-Z0-9]*(-[a-z][a-zA-Z0-9]*))?)?",
-  {
-    message: "ECSS selectors is 'nsp-Component_ChildNode-variant'"
-  }
-]
-```
-
 # The Ten Commandments of Sane Style Sheets
 
 | Commandments                                                                | stylelint Rule            |
 | :-------------------------------------------------------------------------- | :------------------------ |
 | Thou shalt have a single source of truth for all key selectors              | 🛠                         |
-| Thou shalt not nest                                                         | 🛠                         |
+| Thou shalt not nest                                                         | selector-max-specificity  |
 | Thou shalt not use ID selectors                                             | selector-max-id           |
 | Thou shalt not write vendor prefixes in the authoring style sheets          | property-no-vendor-prefix |
 | Thou shalt use variables for sizing, colours and z-index                    | 🛠                         |

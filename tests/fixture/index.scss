@@ -1,0 +1,34 @@
+// ==============================================
+// max-nesting-depth
+// ==============================================
+/* Good */
+.key-Selector {
+}
+.key-Selector_Item {
+}
+
+/* Bad キーセレクタが2箇所に存在する */
+.key-Selector {
+  &_Item {
+    display: block;
+
+    &-variant {
+      display: block;
+    }
+  }
+}
+
+.key-Selector_Item {
+}
+
+/* Good */
+.key-Selector {
+}
+.key-Selector_Item {
+}
+
+/* Bad */
+.key-Selector {
+  .key-Selector_Item {
+  }
+}
