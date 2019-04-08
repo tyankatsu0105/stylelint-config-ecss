@@ -55,6 +55,10 @@
         "prettier --write",
         "git add"
       ],
+      "*.scss": [
+        "prettier --write",
+        "git add"
+      ],
       "*.md": [
         "prettier --write",
         "git add"
