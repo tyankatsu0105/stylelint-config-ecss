@@ -1,4 +1,20 @@
 .hoge {
   display: block;
   max-width: 100px;
+  @extend .hoge;
+}
+
+.hoge {
+  .hoge {
+    display: block;
+  }
+  .hoge {
+    display: block;
+  }
+  .hoge {
+    display: block;
+  }
+  .hoge {
+    display: block;
+  }
 }

@@ -34,6 +34,12 @@ module.exports = {
         message: "Thou shalt not nest"
       }
     ],
+    "at-rule-blacklist": [
+      "extend",
+      {
+        message: "Avoid @extend"
+      }
+    ],
     "selector-max-id": [
       0,
       {
