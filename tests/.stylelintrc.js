@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ["stylelint-declaration-strict-value"],
+  plugins: ["stylelint-declaration-strict-value", "stylelint-plugin-ecss"],
   rules: {
     // Now these rules have been removed
     // "block-no-single-line": true,
@@ -54,15 +54,15 @@ module.exports = {
       }
     ],
     // @WIP Thou shalt use variables for sizing, colours and z-index
-    "scale-unlimited/declaration-strict-value": [
-      ["/color/", "fill", "stroke", "z-index"],
-      {
-        ignoreKeywords: {
-          "": ["currentColor", "inherit", "transparent"],
-          "z-index": 0
-        }
-      }
-    ],
+    // "scale-unlimited/declaration-strict-value": [
+    //   ["/color/", "fill", "stroke", "z-index"],
+    //   {
+    //     ignoreKeywords: {
+    //       "": ["currentColor", "inherit", "transparent"],
+    //       "z-index": 0
+    //     }
+    //   }
+    // ],
     "property-blacklist": [
       "max-width",
       {
@@ -76,6 +76,9 @@ module.exports = {
         resolveNestedSelectors: true,
         message: "ECSS selectors is 'nsp-Component_ChildNode-variant'"
       }
-    ]
+    ],
+    "ecss/comment-check-prefix-browser-hacks": true,
+    "ecss/declaration-comment-magic-numbers-before": true,
+    "ecss/background-no-base64": true
   }
 };

@@ -4,19 +4,87 @@
 
 A stylelint config based on [ECSS](http://ecss.io/)
 
-# http://ecss.io/chapter9.html#stylelint
+# Adopted rules
 
-# The Ten Commandments of Sane Style Sheets
+### Possible errors
 
-| Commandments                                                                | stylelint Rule            |
-| :-------------------------------------------------------------------------- | :------------------------ |
-| Thou shalt have a single source of truth for all key selectors              | 🛠                         |
-| Thou shalt not nest                                                         | selector-max-specificity  |
-| Thou shalt not use ID selectors                                             | selector-max-id           |
-| Thou shalt not write vendor prefixes in the authoring style sheets          | property-no-vendor-prefix |
-| Thou shalt use variables for sizing, colours and z-index                    | 🛠                         |
-| Thou shalt always write rules mobile first                                  | 🛠                         |
-| Use mixins sparingly                                                        | 🛠                         |
-| Thou shalt comment all magic numbers and browser hacks                      | 🛠                         |
-| Thou shalt not inline images                                                | 🛠                         |
-| Thou shalt not write complicated CSS when simple CSS will work just as well | 🛠                         |
+#### Color
+
+- [`color-no-invalid-hex`](https://stylelint.io/user-guide/rules/color-no-invalid-hex)
+
+#### Function
+
+- [`function-linear-gradient-no-nonstandard-direction`](https://stylelint.io/user-guide/rules/function-linear-gradient-no-nonstandard-direction)
+
+#### Declaration block
+
+- [`declaration-block-no-duplicate-properties`](https://stylelint.io/user-guide/rules/declaration-block-no-duplicate-properties)
+- [`declaration-block-trailing-semicolon`](https://stylelint.io/user-guide/rules/declaration-block-trailing-semicolon)
+- [`declaration-block-no-shorthand-property-overrides`](https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides)
+
+#### Block
+
+- [`block-no-empty`](https://stylelint.io/user-guide/rules/block-no-empty)
+
+### Limit language features
+
+#### Value
+
+- [`property-blacklist`](https://stylelint.io/user-guide/rules/property-blacklist)
+- [`value-no-vendor-prefix`](https://stylelint.io/user-guide/rules/value-no-vendor-prefix)
+
+#### Property
+
+- [`property-no-vendor-prefix`](https://stylelint.io/user-guide/rules/property-no-vendor-prefix)
+
+#### Selector
+
+- [`selector-class-pattern`](https://stylelint.io/user-guide/rules/selector-class-pattern)
+- [`selector-max-specificity`](https://stylelint.io/user-guide/rules/selector-max-specificity)
+- [`selector-max-id`](https://stylelint.io/user-guide/rules/selector-max-id)
+
+#### At-rule
+
+- [`at-rule-blacklist`](https://stylelint.io/user-guide/rules/at-rule-blacklist)
+
+### Stylistic issues
+
+#### Function
+
+- [`function-comma-space-after`](https://stylelint.io/user-guide/rules/function-comma-space-after)
+- [`function-url-quotes`](https://stylelint.io/user-guide/rules/function-url-quotes)
+
+#### Number
+
+- [`number-leading-zero`](https://stylelint.io/user-guide/rules/number-leading-zero)
+- [`number-no-trailing-zeros`](https://stylelint.io/user-guide/rules/number-no-trailing-zeros)
+
+#### String
+
+- [`string-quotes`](https://stylelint.io/user-guide/rules/string-quotes)
+
+#### Declaration
+
+- [`declaration-colon-space-after`](https://stylelint.io/user-guide/rules/declaration-colon-space-after)
+- [`declaration-colon-space-before`](https://stylelint.io/user-guide/rules/declaration-colon-space-before)
+
+#### Media feature
+
+- [`media-feature-colon-space-after`](https://stylelint.io/user-guide/rules/media-feature-colon-space-after)
+- [`media-feature-colon-space-before`](https://stylelint.io/user-guide/rules/media-feature-colon-space-before)
+- [`media-feature-name-no-vendor-prefix`](https://stylelint.io/user-guide/rules/media-feature-name-no-vendor-prefix)
+
+#### Selector list
+
+- [`selector-list-comma-newline-after`](https://stylelint.io/user-guide/rules/selector-list-comma-newline-after)
+
+#### General / Sheet
+
+- [`indentation`](https://stylelint.io/user-guide/rules/indentation)
+- [`max-empty-lines`](https://stylelint.io/user-guide/rules/max-empty-lines)
+
+### plugin ecss
+
+- [`ecss/comment-check-prefix-browser-hacks`](https://github.com/tyankatsu0105/stylelint-plugin-ecss/tree/master/lib/rules/comment-check-prefix-browser-hacks)
+- [`ecss/declaration-comment-magic-numbers-before`](https://github.com/tyankatsu0105/stylelint-plugin-ecss/tree/master/lib/rules/declaration-comment-magic-numbers-before)
+- [`ecss/background-no-base64`](https://github.com/tyankatsu0105/stylelint-plugin-ecss/tree/master/lib/rules/background-no-base64)
