@@ -1,0 +1,75 @@
+// ==============================================
+// selector-class-pattern
+// ==============================================
+// ----------------------------------------------
+// valid
+// ----------------------------------------------
+.namespace {
+  display: block;
+}
+.namespace-ModuleName {
+  display: block;
+}
+.namespace-ModuleName_ChildNode {
+  display: block;
+}
+.namespace-ModuleName_ChildNode-variant {
+  display: block;
+}
+
+.namespace {
+  &-ModuleName {
+    &_ChildNode {
+      &-variant {
+        display: block;
+      }
+    }
+  }
+}
+
+// ----------------------------------------------
+// invalid
+// ----------------------------------------------
+.Namespace {
+  display: block;
+}
+.NameSpace {
+  display: block;
+}
+.nameSpace {
+  display: block;
+}
+
+.namespace-modulename {
+  display: block;
+}
+.namespace-moduleName {
+  display: block;
+}
+
+.namespace-ModuleName_childnode {
+  display: block;
+}
+.namespace-ModuleName_childNode {
+  display: block;
+}
+
+.namespace-ModuleName_Childnode-Variant {
+  display: block;
+}
+.namespace-ModuleName_Childnode-VariAnt {
+  display: block;
+}
+.namespace-ModuleName_Childnode-variAnt {
+  display: block;
+}
+
+.namespace_ChildNode {
+  display: block;
+}
+.namespace-variant {
+  display: block;
+}
+.namespace-ModuleName-variant {
+  display: block;
+}
