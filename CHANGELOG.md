@@ -1,3 +1,9 @@
+#### 0.1.1 (2019-04-24)
+
+##### Documentation Changes
+
+*  Add usage, roadmap and license ([c6b19743](https://github.com/tyankatsu0105/stylelint-config-ecss/commit/c6b197433a1874c9995779e980a3ba9efe1c98bd))
+
 ### 0.1.0 (2019-04-22)
 
 ##### Documentation Changes
