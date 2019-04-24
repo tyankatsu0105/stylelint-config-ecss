@@ -4,6 +4,24 @@
 
 A stylelint config based on [ECSS](http://ecss.io/)
 
+# Usage
+
+Install `stylelint` and `stylelint-config-ecss`
+
+```bash
+yarn add stylelint stylelint-config-ecss -D
+```
+
+Create `stylelint.config.js`
+
+```javascript
+"use strict";
+
+module.exports = {
+  extends: ["stylelint-config-ecss"]
+};
+```
+
 # Adopted rules
 
 ### Possible errors
@@ -88,3 +106,15 @@ A stylelint config based on [ECSS](http://ecss.io/)
 - [`ecss/comment-check-prefix-browser-hacks`](https://github.com/tyankatsu0105/stylelint-plugin-ecss/tree/master/lib/rules/comment-check-prefix-browser-hacks)
 - [`ecss/declaration-comment-magic-numbers-before`](https://github.com/tyankatsu0105/stylelint-plugin-ecss/tree/master/lib/rules/declaration-comment-magic-numbers-before)
 - [`ecss/background-no-base64`](https://github.com/tyankatsu0105/stylelint-plugin-ecss/tree/master/lib/rules/background-no-base64)
+
+# License
+
+MIT
+
+# Roadmap for v1.0
+
+- [x] Include [introduced rules](http://ecss.io/chapter9.html#stylelint)
+- [x] Add new rules
+- [x] Create [stylelint plugin ecss](https://github.com/tyankatsu0105/stylelint-plugin-ecss)
+- [x] Include plugin rules
+- [ ] Include [stylelint-declaration-strict-value](https://github.com/AndyOGo/stylelint-declaration-strict-value)
